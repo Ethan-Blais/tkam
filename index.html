@@ -3,7 +3,18 @@
     <title>Login</title>
   </head>
   <body>
-    <form action="/index.js">
+    <script>
+      function checkPass() {
+        var pswrdIn = document.getElementById('passwordIn').value
+        var pswrd = "English Mockingbird"
+        if (pswrd === pswrdIn) {
+          alert("Correct.")
+        } else {
+          alert("Wrong.")
+        }
+      }
+    </script>
+    <form onsubmit="checkPass()">
       <input type="ẗext" id="passwordIn"/>
       <input type="submit" text="Check password"/>
     </form>
