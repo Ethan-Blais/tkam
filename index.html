@@ -10,7 +10,8 @@
         var pswrdIn = document.getElementById('passwordIn').value
         var pswrd = "English Mockingbird"
         if (pswrd === pswrdIn) {
-          window.location = 'https://ethan-blais.github.io/tkmb/question1.html'
+          window.location.replace("https://ethan-blais.github.io/tkmb/question1.html");
+          alert("Server-side Error: Password correct,
         } else {
           alert("Incorrect password. Try again.")
         }
