@@ -10,14 +10,13 @@
         var pswrdIn = document.getElementById('passwordIn').value
         var pswrd = "English Mockingbird"
         if (pswrd === pswrdIn) {
-          return true;
+          window.location = 'https://ethan-blais.github.io/tkmb/question1.html'
         } else {
-          return false;
           alert("Incorrect password. Try again.")
         }
       }
     </script>
-    <form onsubmit="return checkPass()" action="http://ethan-blais.github.io/tkmb/question1.html" method="POST">
+    <form onsubmit="checkPass()">
       <input type="ẗext" id="passwordIn"/>
       <input type="submit" text="Check password"/>
     </form>
