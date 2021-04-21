@@ -5,21 +5,18 @@
   <body>
     <h2>Please enter the password to continue:</h2>
     <p>If you do not know the password, let your teacher know.</p>
-    <script>
-      function checkPass() {
-        var pswrdIn = document.getElementById('passwordIn').value
-        var pswrd = "English Mockingbird"
-        if (pswrd === pswrdIn) {
-          location.href = "https://ethan-blais.github.io/tkmb/question1.html";
-          alert("Server-side Error")
-        } else {
-          alert("Incorrect password. Try again.")
+    <form name="login">
+      Password<input type="password" name="pswrd"/>
+      <input type="button" onclick="check(this.form)" value="Continue"/>
+    </form>
+    <script language="javascript">
+      function check(form) {
+        if(form.pswrd.value == "English Mockingbird") {
+          window.open("question1.html")
+        }
+        else {
+          alert("The Password is incorrect")/*displays error message*/
         }
       }
-    </script>
-    <form onsubmit="checkPass()">
-      <input type="ẗext" id="passwordIn"/>
-      <input type="submit" text="Check password"/>
-    </form>
   </body>
 </html>
