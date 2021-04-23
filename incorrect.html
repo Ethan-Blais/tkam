@@ -6,6 +6,13 @@
   <body>
     <img src="critical.png">
     <audio src="Wrong.mp3"></audio>
+    <script>
+      window.addEventListener("DOMContentLoaded", event => {
+        const audio = document.querySelector("audio");
+        audio.volume = 0.2;
+        audio.play();
+      });
+    </script>
     <h2>Incorrect!</h2>
     <p>Click the back arrow at the top-left of Google Chrome</p>
   </body>
