@@ -3,22 +3,6 @@
     <title>Login</title>
   </head>
   <body>
-    <h2>Please enter the password to continue:</h2>
-    <p>If you do not know the password, let your teacher know.</p>
-    <p>Do not submit by pressing Enter on your keyboard. You must submit by pressing the Continue button below.</p>
-    <form name="login">
-      <input type="text" name="pswrd"/>
-      <input type="button" onclick="check(this.form)" value="Continue"/>
-    </form>
-    <script language="javascript">
-      function check(form) {
-        if(form.pswrd.value == "English Mockingbird") {
-          window.open("question1.html")
-        }
-        else {
-          alert("The Password is incorrect")
-        }
-      }
-    </script>
+    <h2><a href="question1.html">Click to begin</a></h2>
   </body>
 </html>
